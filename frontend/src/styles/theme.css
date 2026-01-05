@@ -1,0 +1,133 @@
+/* ====================================
+   Track Sphere - Theme Variables
+   Light & Dark Mode Support
+   ==================================== */
+
+/* Light Mode (Default) */
+:root,
+body.light {
+  /* Primary Colors */
+  --cyan-primary: #06b6d4;
+  --cyan-light: #22d3ee;
+  --cyan-dark: #0891b2;
+  
+  /* Dark Colors */
+  --navy-blue: #0f172a;
+  --dark-blue: #1e3a5f;
+  
+  /* Status Colors */
+  --success-green: #10b981;
+  --warning-yellow: #f59e0b;
+  --error-red: #ef4444;
+  --info-blue: #3b82f6;
+  
+  /* Neutral Colors */
+  --white: #ffffff;
+  --bg-light: #f8fafc;
+  --bg-primary: #ffffff;
+  --border-color: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+/* Dark Mode */
+body.dark {
+  /* Primary Colors remain same */
+  --cyan-primary: #06b6d4;
+  --cyan-light: #22d3ee;
+  --cyan-dark: #0891b2;
+  
+  /* Dark Background Colors */
+  --navy-blue: #f8fafc;
+  --dark-blue: #e2e8f0;
+  
+  /* Status Colors remain same */
+  --success-green: #10b981;
+  --warning-yellow: #f59e0b;
+  --error-red: #ef4444;
+  --info-blue: #3b82f6;
+  
+  /* Inverted Neutral Colors */
+  --white: #1e293b;
+  --bg-light: #0f172a;
+  --bg-primary: #1e293b;
+  --border-color: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  
+  /* Softer shadows for dark mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6);
+}
+
+/* Smooth Transition for Theme Changes */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+}
+
+/* Theme-aware scrollbar (for webkit browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Dark mode specific adjustments */
+body.dark {
+  /* Ensure images don't look too bright */
+  img {
+    opacity: 0.9;
+  }
+  
+  /* Slightly dim videos in dark mode */
+  video {
+    opacity: 0.95;
+  }
+  
+  /* Ensure form inputs look good */
+  input, textarea, select {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+  }
+  
+  /* Ensure buttons maintain good contrast */
+  button:not(.btn-gradient):not(.btn-primary) {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+  }
+}
+
+/* Animation for theme transitions */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.theme-transition {
+  animation: fadeIn 0.3s ease;
+}
+

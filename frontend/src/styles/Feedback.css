@@ -1,0 +1,76 @@
+.feedback-container {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.feedback-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feedback-card {
+  padding: 1.5rem;
+  border-left: 4px solid #06b6d4;
+  background: #f8fafc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.feedback-card:hover {
+  background: #f1f5f9;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+.feedback-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.feedback-meta h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.feedback-date {
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.feedback-rating {
+  font-size: 1.25rem;
+}
+
+.feedback-content {
+  margin-bottom: 1rem;
+}
+
+.feedback-content p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.feedback-status {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+  .feedback-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
