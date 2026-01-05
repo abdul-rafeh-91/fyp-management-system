@@ -21,7 +21,7 @@ const EvaluatorForm = () => {
   const [error, setError] = useState('');
   const [filter, setFilter] = useState('pending');
 
-  // Evaluation Criteria (Based on requirements).
+  // Evaluation Criteria (Based on requirements)..
   const [evaluationData, setEvaluationData] = useState({
     problemDefinition: { score: 0, maxScore: 15, feedback: '' },
     literatureReview: { score: 0, maxScore: 15, feedback: '' },
