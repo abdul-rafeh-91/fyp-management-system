@@ -12,7 +12,7 @@ const CommitteeUsers = () => {
     const [loading, setLoading] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
 
-    // Registration Form State
+    // Registration Form State.
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formData, setFormData] = useState({
         fullName: '',

@@ -42,7 +42,7 @@ const Settings = () => {
     try {
       const response = await api.get(`/users/${user.userId}`);
 
-      // Handle response - check if it's an object or needs parsing
+      // Handle response - check if it's an object or needs parsing.
       let userInfo = response.data;
 
       // If response.data is a string (circular reference issue), try to parse it

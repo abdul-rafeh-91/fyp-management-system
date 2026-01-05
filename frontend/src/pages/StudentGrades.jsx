@@ -29,7 +29,7 @@ const StudentGrades = () => {
   };
 
   const downloadDMC = () => {
-    // In a real implementation, this would generate a PDF
+    // In a real implementation, this would generate a PDF.
     window.print();
   };
 

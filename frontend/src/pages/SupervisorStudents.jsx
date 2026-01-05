@@ -23,7 +23,7 @@ const SupervisorStudents = () => {
     try {
       setLoading(true);
 
-      // 1. Fetch ALL assigned students
+      // 1. Fetch ALL assigned students.
       const studentsResponse = await api.get(`/users/supervisor/${user.userId}/students`);
       const assignedStudents = Array.isArray(studentsResponse.data) ? studentsResponse.data : [];
 

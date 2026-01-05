@@ -23,15 +23,15 @@ const CommitteeDashboard = () => {
     try {
       setLoading(true);
       
-      // Fetch all students
+      // Fetch all students data
       const studentsResponse = await api.get('/users/role/STUDENT');
       const students = Array.isArray(studentsResponse.data) ? studentsResponse.data : [];
       
-      // Fetch all supervisors
+      // Fetch all supervisors data
       const supervisorsResponse = await api.get('/users/role/SUPERVISOR');
       const supervisors = Array.isArray(supervisorsResponse.data) ? supervisorsResponse.data : [];
       
-      // Fetch all documents
+      // Fetch all documents data
       const documentsResponse = await api.get('/documents');
       const documents = Array.isArray(documentsResponse.data) ? documentsResponse.data : [];
       

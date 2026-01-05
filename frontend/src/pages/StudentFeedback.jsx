@@ -19,7 +19,7 @@ const StudentFeedback = () => {
   const fetchVersionHistory = async () => {
     try {
       setLoading(true);
-      // Fetch all student documents
+      // Fetch all student documents.
       const docsResponse = await api.get(`/documents/student/${user?.userId}`);
       const documents = docsResponse.data || [];
       

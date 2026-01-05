@@ -27,7 +27,7 @@ const SupervisorDashboard = () => {
     try {
       setLoading(true);
       
-      // Fetch documents for this supervisor
+      // Fetch documents for this supervisor.
       const response = await api.get(`/documents/supervisor/${user.userId}`);
       const documents = Array.isArray(response.data) ? response.data : [];
 

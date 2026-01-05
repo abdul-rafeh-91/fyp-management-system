@@ -34,7 +34,7 @@ const SupervisorReview = () => {
     try {
       setLoading(true);
 
-      // 1. Fetch assigned groups
+      // 1. Fetch assigned groups.
       const groupsResponse = await api.get(`/groups/supervisor/${user.userId}`);
       const assignedGroups = Array.isArray(groupsResponse.data) ? groupsResponse.data : [];
 

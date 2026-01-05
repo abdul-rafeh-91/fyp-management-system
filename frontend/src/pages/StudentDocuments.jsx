@@ -27,7 +27,7 @@ const StudentDocuments = () => {
   const fetchAssignedDocuments = async () => {
     try {
       setLoading(true);
-      // Fetch documents
+      // Fetch documents.
       const docsResponse = await api.get(`/documents/student/${user?.userId}`);
       const documents = docsResponse.data || [];
 

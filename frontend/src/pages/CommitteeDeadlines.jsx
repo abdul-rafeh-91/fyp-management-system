@@ -15,7 +15,7 @@ const CommitteeDeadlines = () => {
   const [editingDeadline, setEditingDeadline] = useState(null);
   const [formData, setFormData] = useState({
     deadlineType: '',
-    documentType: '', // Optional: for backward compatibility
+    documentType: '', // Optional: for backward compatibility..
     deadline: '',
     description: '',
   });

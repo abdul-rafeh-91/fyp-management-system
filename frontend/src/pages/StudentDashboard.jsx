@@ -51,7 +51,7 @@ const StudentDashboard = () => {
     try {
       setLoading(true);
 
-      // Fetch Group Info
+      // Fetch Group Info.
       try {
         const groupRes = await api.get(`/groups/student/${user.userId}`);
         if (groupRes.data) {

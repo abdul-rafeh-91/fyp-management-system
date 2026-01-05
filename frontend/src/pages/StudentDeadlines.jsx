@@ -65,7 +65,7 @@ const StudentDeadlines = () => {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      {/* Header */}
+      {/* Header .*/}
       <div className="bg-gradient-to-r from-[#06b6d4] to-[#22d3ee] text-white rounded-xl shadow-lg p-4 sm:p-6 md:p-8">
         <h1 className="text-white mb-2 text-2xl sm:text-3xl">Project Deadlines</h1>
         <p className="text-white/90 text-sm sm:text-base">Track all your project milestones and submission deadlines</p>

@@ -10,7 +10,7 @@ const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [filter, setFilter] = useState('all'); // 'all' or 'unread'
+  const [filter, setFilter] = useState('all'); // 'all' or 'unread'.
 
   useEffect(() => {
     if (user && user.userId) {

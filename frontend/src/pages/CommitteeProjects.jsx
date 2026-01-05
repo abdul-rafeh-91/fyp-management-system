@@ -25,7 +25,7 @@ const CommitteeProjects = () => {
       const groupsResponse = await api.get('/groups');
       const groupsList = groupsResponse.data || [];
 
-      // 2. Fetch all submitted documents
+      // 2. Fetch all submitted documents.
       // Note: 'submitted' endpoint filters by role, so ensure Committee can access it.
       // DocumentController: @PreAuthorize("hasAnyRole('SUPERVISOR', 'FYP_COMMITTEE', 'EVALUATOR')")
       const docsResponse = await api.get('/documents/submitted');

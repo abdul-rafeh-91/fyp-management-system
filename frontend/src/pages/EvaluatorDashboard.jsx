@@ -27,7 +27,7 @@ const EvaluatorDashboard = () => {
     try {
       setLoading(true);
       
-      // Fetch documents that need evaluation
+      // Fetch documents that need evaluation.
       const pendingResponse = await api.get('/documents/status/UNDER_EVALUATION_COMMITTEE_REVIEW');
       const completedResponse = await api.get('/documents/status/EVALUATION_COMMITTEE_APPROVED');
       const revisionResponse = await api.get('/documents/status/EVALUATION_COMMITTEE_REVISION_REQUESTED');

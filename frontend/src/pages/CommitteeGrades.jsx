@@ -24,7 +24,7 @@ const CommitteeGrades = () => {
   const fetchDocuments = async () => {
     try {
       setLoading(true);
-      // Fetch documents that have been evaluated (status: EVALUATION_COMMITTEE_APPROVED)
+      // Fetch documents that have been evaluated (status: EVALUATION_COMMITTEE_APPROVED).
       const response = await api.get('/documents/status/EVALUATION_COMMITTEE_APPROVED');
       setDocuments(response.data || []);
     } catch (err) {

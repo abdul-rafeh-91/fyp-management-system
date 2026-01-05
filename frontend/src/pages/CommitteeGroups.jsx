@@ -68,7 +68,7 @@ const CommitteeGroups = () => {
             showToast('Group created successfully!');
             setIsModalOpen(false);
             setFormData({ name: '', supervisorId: '', studentIds: [] });
-            fetchData(); // Refresh list
+            fetchData(); // Refresh list.
         } catch (error) {
             showToast(error.response?.data?.error || 'Failed to create group', 'error');
         } finally {
